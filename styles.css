@@ -27,18 +27,23 @@ main {
  }
 
 header {
-    height: 400px;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    height: 45vh; /* reageert op schermhoogte */
+    max-height: 600px;
+
     background-image: url("images/background-header.png");
     background-size: cover;
     background-position: bottom center;
-    position: relative;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end; /* navbar onderin */
 }
 
-
+/* Navbar */
 nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: rgba(124, 13, 106, 0.6);
     padding: 15px 0;
@@ -60,7 +65,6 @@ nav {
 .nav-links a:hover {
     color: #e40888;
 }
-
 
 .contact-form {
     max-width: 600px;
@@ -119,6 +123,23 @@ nav {
 
 .contact-form .submit-btn:hover {
     background-color: #d23585;
+}
+
+.recipe-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recipe-table td {
+    padding: 15px;
+    vertical-align: top;
+    border: none; 
+}
+
+.recipe-img {
+    width: 150px;
+    border-radius: 10px;
+    display: block;
 }
 
 

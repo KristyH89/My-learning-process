@@ -74,9 +74,54 @@ I added a **contact form** to the website on `contact.html`:
 - Styled with CSS (`.contact-form` class) to match the website’s design: centered, responsive, with padding, background color, and a hover effect on the submit button.  
 - This form layout was adapted from a previous assignment for consistency.
 
+## Step 7 – Header and Navbar on All Pages  
 
+I ensured that the **header and navbar are consistent across all pages** (`index.html`, `food.html`, and `contact.html`):
 
+- The `<header>` contains a background image that is always 400px high.  
+- A navbar with links to **Home**, **Food**, and **Contact** is positioned at the bottom of the header using `position: absolute; bottom: 0; left: 0; width: 100%;`.  
+- Flexbox (`display: flex; flex-direction: column; justify-content: flex-end;`) ensures the navbar stays at the bottom even when the header content is empty.  
+- The background image uses `background-size: cover;` and `background-position: bottom center;` so the important part of the image remains visible on all screen sizes.  
+- This approach allows the header and navbar to be reused on multiple pages for a consistent layout.
 
+---
+
+## Step 8 – Food Table  
+
+On the `food.html` page, I added a **table layout** to showcase recipes and descriptions:
+
+- Each row contains an image of the dish and a short description beside it.  
+- The table uses CSS to remove default borders and keep a clean look (`border-collapse: collapse; border: none;`).  
+- Images are styled with a fixed width (150px), rounded corners, and proper spacing.  
+- This layout allows users to scan dishes visually while still including descriptive text.  
+- The table structure can easily be expanded with additional dishes or adjusted for styling improvements.
+
+** note **
+I'm not really happy yet with the style, so I will change this part soon. 
+
+---
+
+## Step 9 – Footer  
+
+The `<footer>` is consistent across all pages:
+
+- Full-width layout with a pink background (`#ea4199`) and centered white text.  
+- Positioned at the bottom of the page using Flexbox:  
+  - `body { display: flex; flex-direction: column; }`  
+  - `main { flex-grow: 1; }`  
+- This ensures the footer stays at the bottom even when the page content is short.
+
+---
+
+## Step 10 – General CSS Styling  
+
+General styling improvements were applied across the entire website:
+
+- A CSS reset was added to remove default browser spacing:  
+  `* { margin: 0; padding: 0; box-sizing: border-box; }`  
+- Consistent fonts, colors, spacing, and layout applied to all pages.  
+- Navbar links include hover effects for improved interactivity.  
+- The contact form and food table are styled for readability, responsiveness, and visual consistency.
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
