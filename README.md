@@ -5,6 +5,53 @@ With this website, I want to showcase some of my cooking skills while practicing
 
 The original workshop instructions are included below this report. I used them as a guideline and followed each step carefully while developing the project.
 
+---
+
+### Step 1 – Create the header
+
+I added a '<header>' to my homepage to welcome visitors and provide structure.
+
+- The header now does not contain text directly, but instead displays a background image with the bottom part visible, showing my "Coocking Adventures with Kristy" banner. I wanted to write some text there first, but it didn't look right with the background-image. 
+- I used CSS background-image to set the header image, background-size: cover to fill the header, and background-position: bottom center to ensure the important part of the image (the bottom) remains visible even on larger screens. 
+- A <nav> element is placed at the bottom of the header, styled with position: absolut; bottom: 0; left:0; widht: 100% to span the full widht. The links are centred using Flexbox. 
+
+**Note on debugging the navbar:**
+Initially, the navbar appeared only on the righ side of the header. I tried several approaches, including adjusting widhts and flex settings, but the issue persisted. Eventually, I realized that adding left: 0; to the CSS positioning fixed it and ensured the navbar spanned the full widht as intended. This taught me a lot about absolute positioning and how it interacts with parent elements and flex layouts.  
+
+- Using CSS instead of <img> for the header background allows more flexibility for positioning and ensures the header scales well on diffrent screen sizes. 
+
+
+---
+
+## Step 2 – Create the main content
+
+I added a `<main>` section below the header to display the primary content of the page:
+
+- `<h1>` contains: "Welcome to my website!"  
+- `<p>` contains a short description: "Discover my favorite recipes and cooking adventures while at the same time following my journey as I learn and grow in HTML and CSS on my path to becoming a full-stack developer."
+- The main content is centered and uses padding and text styling for readability.
+
+---
+
+## Step 3 – Footer
+
+I added a `<footer>` at the bottom of the page:
+
+- Contains a simple copyright line: "© 2026 Cooking Adventures with Kristy"
+- Styled with a background color and centered text. I will change this later. This is just a start. 
+
+---
+
+## Step 4 – CSS Styling
+
+- **Header:** background image, `cover` size, `bottom center` position, height set to 400px, and `position: relative` for navbar positioning.  
+- **Navbar:** absolute position at the bottom of the header, full width, semi-transparent background (`rgba`), links centered using Flexbox.  
+- **Main content:** centered text, readable font size, padding applied.  
+- **Footer:** full-width, centered text, contrasting background for clarity.
+
+---
+
+
 
 
 
