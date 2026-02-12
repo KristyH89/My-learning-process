@@ -64,7 +64,15 @@ After initially adding a simple footer, I made several improvements to ensure it
 > **Reflection:** Fixing the footer and testing the main content helped me practice **layout control**, **flexbox**, and **page structure**. I also learned the importance of proper semantic HTML (`<p>` tags instead of `<br>` for spacing) and how CSS can be used to manage spacing consistently across the page. These adjustments improved both the **visual design** and **responsiveness** of the webpage.
 
 
+## Step 6 – Contact Form
 
+I added a **contact form** to the website on `contact.html`:
+
+- The form includes fields for **Name**, **Email Address**, and **Message**.  
+- A **submit button** allows users to send their message.  
+- The form uses semantic HTML elements (`<form>`, `<label>`, `<input>`, `<textarea>`).  
+- Styled with CSS (`.contact-form` class) to match the website’s design: centered, responsive, with padding, background color, and a hover effect on the submit button.  
+- This form layout was adapted from a previous assignment for consistency.
 
 
 
