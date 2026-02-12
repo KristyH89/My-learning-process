@@ -51,6 +51,20 @@ I added a `<footer>` at the bottom of the page:
 
 ---
 
+## Step 5 – Footer Improvements & Main Content Testing
+
+After initially adding a simple footer, I made several improvements to ensure it looked better and behaved correctly on the page:
+
+- I changed the footer to a **pink background (`#ea4199`)** with **white, centered text** for better visual contrast.  
+- Using **flexbox on the body**, I ensured that the footer **always stays at the bottom of the viewport**, even if the main content is short. This removed the unwanted white space that previously appeared below the footer.  
+- I added **padding to the footer** (`15px 0`) to give the text some breathing room and improve readability.  
+- I added temporary **lorem ipsum text** in the main content to test the layout and spacing of paragraphs.  
+- To create consistent spacing between paragraphs, I **removed `<br>` tags** and applied CSS `margin-bottom` to `<p>` elements, which improved readability and ensured a neat, professional look.  
+
+> **Reflection:** Fixing the footer and testing the main content helped me practice **layout control**, **flexbox**, and **page structure**. I also learned the importance of proper semantic HTML (`<p>` tags instead of `<br>` for spacing) and how CSS can be used to manage spacing consistently across the page. These adjustments improved both the **visual design** and **responsiveness** of the webpage.
+
+
+
 
 
 
