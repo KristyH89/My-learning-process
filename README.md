@@ -123,6 +123,72 @@ General styling improvements were applied across the entire website:
 - Navbar links include hover effects for improved interactivity.  
 - The contact form and food table are styled for readability, responsiveness, and visual consistency.
 
+
+---
+
+## Step 11 Contact Page Background & Styling
+
+On the `contact.html` page, I wanted to create a different atmosphere compared to the other pages.  
+To achieve this, I added a background image directly to the `<body>` element using a specific class.
+
+In the HTML, I added a class to the body:
+
+```html
+<body class="contact-page">
+
+
+  ## Debugging Lesson – Live View vs GitHub View
+
+During this project, I also learned the importance of checking whether I was viewing the **Live Server** or just the **repository preview on GitHub**.
+
+At one point, I thought my CSS changes were not working. After troubleshooting for a while, I realized I was looking at the GitHub repository page instead of the Live Server.
+
+This experience taught me:
+
+- Always verify that I am testing the correct (live) version of the website.
+- Small details can make a big difference during debugging.
+- When something seems broken, first check the environment before changing the code.
+
+This was a valuable lesson in attention to detail and debugging workflow.
+
+---
+
+## Step 12 – Food Page Layout Improvements
+
+After creating the initial table layout for the Food page, I decided to improve the design to make it more modern, structured, and visually appealing.
+
+### From Table to Card Layout
+
+Although I initially used a `<table>` to display the recipes (to meet the assignment requirement), I was not fully satisfied with the visual result. The layout felt too rigid and not very modern.
+
+To improve this, I redesigned the recipe section using a **card-based layout**:
+
+- I created a `<div class="recipe-container">` to wrap all recipes.
+- Each dish is placed inside a `<div class="recipe-card">`.
+- Each recipe card contains:
+  - A `<h3>` title
+  - An `<img>` element
+  - A `<p>` description
+
+This structure provides more flexibility and better control over layout and spacing.
+
+---
+
+### Using Flexbox for Layout
+
+To align and organize the recipe cards, I used **Flexbox**:
+
+```css
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
 
