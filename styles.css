@@ -222,10 +222,13 @@ main p {
 }
 
 .contact-form .submit-btn {
-  width: 100%;
-  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* ruimte tussen icoon en tekst */
   background-color: rgb(54, 151, 111);
   color: white;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;

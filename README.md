@@ -259,6 +259,49 @@ The images were resized using CSS to maintain consistency and visual balance.
 <link rel="icon" type="image/png" href="images/fork-knife.png">
 
 
+---
+
+## Step 15 – Enhancements on Contact Page
+
+### Contact Form Button
+
+- I improved the **submit button** on the contact form by adding an **icon** to make it more visually appealing.  
+- I used the official **Bootstrap fork-knife SVG icon**, placed **left of the text** inside the button.  
+- Adjusted the **CSS** for the button to use `inline-flex`, align items vertically, and add a small gap between the icon and the text.  
+- Added a **hover effect** to change the button color when hovered over.  
+- This small addition makes the contact form look more professional and engaging, while keeping the button fully functional.
+
+```css
+.contact-form .submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* ruimte tussen icoon en tekst */
+  background-color: rgb(54, 151, 111);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: rgb(51, 97, 79);
+}
+The SVG icon is included directly in the HTML inside the button:
+
+<button type="submit" class="submit-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+  <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
+</svg>
+  Send message
+</button>
+
+And I found out I did not had the favicon on all the html pages, so I added it to the contact and foodpage. 
+
+
+---
 
 
 
