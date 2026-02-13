@@ -187,7 +187,52 @@ To align and organize the recipe cards, I used **Flexbox**:
 }
 
 
+## Step 13 – Further development of index.html
 
+In this step I continued improving the structure and layout of my `index.html` page.
+
+### Layout and Structure
+
+- I structured the page using semantic HTML elements such as:
+  - `<header>` for the navigation
+  - `<main>` for the main content
+  - `<footer>` for the copyright section
+- I added extra text to make the homepage more personal and to explain the purpose of the website.
+- I made sure the content is logically structured and easy to read.
+
+### Table Implementation
+
+- I added a table to the homepage to meet the project requirements.
+- The table is used to present structured information in a clear way.
+- I made sure the table is placed inside the `<main>` section.
+- I styled the table using CSS selectors to improve readability and layout.
+
+### Paragraph Spacing
+
+- I added spacing between paragraphs using CSS:
+
+```css
+p {
+  margin-bottom: 20px;
+}
+
+This improves readability and gives the page a cleaner layout.
+
+---
+
+## Image Section – Step-by-Step Concept
+
+Below the table, I added three images showing the step-by-step process of making homemade ice cream.
+
+The steps represent:
+
+- Making the waffles  
+- Preparing the ice cream  
+- Combining everything into the final result  
+
+I used a flexbox layout to align the images neatly next to each other.
+
+The images were resized using CSS to maintain consistency and visual balance.
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)

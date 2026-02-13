@@ -18,8 +18,6 @@ body.contact-page {
   background-attachment: fixed;
 }
 
-
-
 /* Header */
 header {
   position: relative;
@@ -70,6 +68,60 @@ nav {
   color: white;
   max-width: 800px;
   margin: 0 auto;
+}
+
+main p {
+  margin-bottom: 25px;
+}
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.home-image {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.goals {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.goals-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.goals-table th,
+.goals-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.goals-table th {
+    background-color: rgb(54, 151, 111);
+    color: white;
+}
+
+.goals-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ice-steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.ice-steps img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
 }
 
 #recipes {
