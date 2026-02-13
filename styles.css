@@ -10,6 +10,8 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
 }
+body {
+  background-color: #cacaca; 
 
 body.contact-page {
   background-image: url("images/background-contact2.jpeg");
@@ -99,13 +101,17 @@ main p {
 
 .goals-table th,
 .goals-table td {
-    border: 1px solid #ccc;
+    border: 1px solid #598f71;
     padding: 12px;
 }
 
 .goals-table th {
     background-color: rgb(54, 151, 111);
     color: white;
+}
+
+.goals-table tbody tr:nth-child(odd) {
+    background-color: #bce2d9;
 }
 
 .goals-table tr:nth-child(even) {

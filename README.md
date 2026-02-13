@@ -303,6 +303,42 @@ And I found out I did not had the favicon on all the html pages, so I added it t
 
 ---
 
+## Step 16 – Index Page Styling Updates
+
+In this step I made further visual improvements to the `index.html` page to enhance readability and aesthetics.
+
+### Body Background Color
+
+- I added a light background color to the homepage to make the content stand out more.
+- This was achieved by targeting the `body.home-page` selector in CSS:
+
+```css
+body.home-page {
+  background-color: #cacaca; 
+}
+
+- The background color improves contrast and makes the text easier to read.
+
+
+Table Row Colors
+
+- I updated the table on the homepage to improve visual clarity.
+- Previously only the even rows had a background color, which made the table look uneven.
+- Now all rows in the table have alternating background colors for better readability:
+
+.goals-table tbody tr:nth-child(odd) {
+    background-color: #bce2d9;
+}
+
+.goals-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+- The header row (th) remains distinct with a strong green background (rgb(54, 151, 111)) and white text.
+- This creates a clear separation between header and data rows, improving the overall layout and making the table easier to scan.
+
+---
+
 
 
 ------------------------------------------------------------------------------------------------------------------
