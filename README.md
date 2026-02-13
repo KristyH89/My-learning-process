@@ -234,6 +234,34 @@ I used a flexbox layout to align the images neatly next to each other.
 
 The images were resized using CSS to maintain consistency and visual balance.
 
+
+---
+
+## Step 14 – Header adjustments, text updates, and favicon
+
+### Header Adjustments
+
+- I explored different ways to make the header background more responsive, so it looks good on both desktop and mobile screens.
+- I experimented with various CSS properties (`height`, `min-height`, `max-height`, `background-size`, `background-position`) to try to keep the important part of the header image visible.
+- After testing, I decided to keep the header as it is now, since it balances visual appearance and readability.
+
+### Text Updates
+
+- I updated the text on `index.html` to make the homepage more descriptive and personal.
+- Minor improvements were made to paragraph structure and spacing for better readability.
+- Ensured the paragraphs are spaced consistently using CSS (`p { margin-bottom: 20px; }`).
+
+### Favicon Implementation
+
+- I added a favicon (`fork-knife.svg`) to the website by including it in the `<head>` section:
+```html
+<link rel="icon" type="image/svg+xml" href="images/fork-knife.svg"> but did didn't work, so I converted it to png and changed it to:
+<link rel="icon" type="image/png" href="images/fork-knife.png">
+
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
 

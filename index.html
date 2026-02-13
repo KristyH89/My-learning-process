@@ -4,100 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Adventures with Kristy</title>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/fork-knife.png">
 </head>
 <body>
-    <header>
-                   
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
- 
-    
-    </div>
-</header>
 
-<main>
+   <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  
 
+  <main>
     <section class="intro">
+      <h1>Welcome to my website!</h1><br> 
+      <p>Discover my favorite recipes and cooking adventures while at the same time following my journey 
+         as I learn and grow in HTML and CSS on my path to becoming a full-stack developer.</p>
 
-<h1>Welcome to my website!</h1> <br>
-
-<p>Discover my favorite recipes and cooking adventures while at the same time following my journey 
-as I learn and grow in HTML and CSS on my path to becoming a full-stack developer.</p>
-
- <p>
-            This website combines two of my biggest passions: cooking and technology. 
-            Here I experiment not only with flavors in the kitchen, but also with layouts, 
-            styling, and structure in web development.
-        </p>
-
-    <section class="goals">
-        <h2>My Learning Goals</h2> <br>
-
-        <table class="goals-table">
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>What I Am Learning</th>
-                    <th>Level</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>Semantic structure and accessibility</td>
-                    <td>Beginner → Intermediate</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Flexbox, layout, responsive design</td>
-                    <td>Beginner → Intermediate</td>
-                </tr>
-                <tr>
-                    <td>Git & GitHub</td>
-                    <td>Version control and deployment</td>
-                    <td>Learning</td>
-                </tr>
-            </tbody>
-        </table>
+      <p>
+        This website combines two of my biggest passions: cooking and technology. 
+        Here I experiment not only with flavors in the kitchen, but also with layouts, 
+        styling, and structure in web development.
+      </p>
     </section>
 
- <h2>From Ingredients to Happiness</h2>
+    <section class="goals">
+      <h2>My Learning Goals</h2>
+      <table class="goals-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>What I Am Learning</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Semantic structure and accessibility</td>
+            <td>Beginner → Intermediate</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Flexbox, layout, responsive design</td>
+            <td>Beginner → Intermediate</td>
+          </tr>
+          <tr>
+            <td>Git & GitHub</td>
+            <td>Version control and deployment</td>
+            <td>Learning</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-<p>
-Just like learning HTML and CSS, making homemade ice cream takes time. <br>
-First, you prepare the waffles. Then you make the ice cream. <br>
-Step by step, layer by layer — until everything comes together.<br>
-The process may take patience, but the result is worth it.
-</p>
-   <div class="ice-steps">
-  <div>
-    <img src="images/homemade-cones.jpeg" alt="Homemade waffles">
-    <p>Step 1: Baking the waffles</p>
-  </div>
+    <section class="ice-cream-steps">
+      <h2>From Ingredients to Happiness</h2>
+      <p>
+        Just like learning HTML and CSS, making homemade ice cream takes time.<br>
+        First, you prepare the waffles. Then you make the ice cream.<br>
+        Step by step, layer by layer — until everything comes together.<br>
+        The process may take patience, but the result is worth it.
+      </p>
 
-  <div>
-    <img src="images/icecream-made-in-snow.jpeg" alt="Homemade ice cream">
-    <p>Step 2: Making the ice cream</p>
-  </div>
+      <div class="ice-steps">
+        <div class="step">
+          <img src="images/homemade-cones.jpeg" alt="Homemade waffles">
+          <p>Step 1: Baking the waffles</p>
+        </div>
+        <div class="step">
+          <img src="images/icecream-made-in-snow.jpeg" alt="Homemade ice cream">
+          <p>Step 2: Making the ice cream</p>
+        </div>
+        <div class="step">
+          <img src="images/icecream-in-cone2.jpeg" alt="Final result">
+          <p>Step 3: The final combination</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <div>
-    <img src="images/icecream-in-cone2.jpeg" alt="Final result">
-    <p>Step 3: The final combination</p>
-  </div>
-</div>
-
-
-
-</main>
-<footer>
+  <footer>
     <p>© 2026 KristyH89</p>
-</footer>
+  </footer>
+
+  <script>
+    // Laad herbruikbare header via fetch
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
