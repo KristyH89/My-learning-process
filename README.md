@@ -186,7 +186,7 @@ To align and organize the recipe cards, I used **Flexbox**:
   justify-content: center;
   gap: 30px;
 }
-
+```
 
 ## Step 13 – Further development of index.html
 
@@ -216,6 +216,7 @@ In this step I continued improving the structure and layout of my `index.html` p
 p {
   margin-bottom: 20px;
 }
+```
 
 This improves readability and gives the page a cleaner layout.
 
@@ -298,6 +299,7 @@ The SVG icon is included directly in the HTML inside the button:
 </svg>
   Send message
 </button>
+```
 
 And I found out I did not had the favicon on all the html pages, so I added it to the contact and foodpage. 
 
@@ -334,6 +336,7 @@ Table Row Colors
 .goals-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+```
 
 - The header row (th) remains distinct with a strong green background (rgb(54, 151, 111)) and white text.
 - This creates a clear separation between header and data rows, improving the overall layout and making the table easier to scan.
@@ -357,7 +360,7 @@ body.home-page main {
 
 ## Step 18 Added a navbar in the footer
 
-  <footer>
+```<footer>
   <nav class="footer-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -374,15 +377,18 @@ After I added the navbar on the footer, I also had to change the hover.
 footer .nav-links a:hover {
   color: #bce2d9;   
 }
-
+```
 
 ---
 
 ## 19 Changed color of the heading in index.html
  
- I added body.home-page h1 {
+ I added 
+ 
+ ```body.home-page h1 {
   color: rgb(54, 151, 111);
 }  
+```
 
 Because for now I only need to changed the header on the index. 
 
