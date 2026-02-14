@@ -126,7 +126,7 @@ General styling improvements were applied across the entire website:
 
 ---
 
-## Step 11 Contact Page Background & Styling
+## Step 11 - Contact Page Background & Styling
 
 On the `contact.html` page, I wanted to create a different atmosphere compared to the other pages.  
 To achieve this, I added a background image directly to the `<body>` element using a specific class.
@@ -343,7 +343,7 @@ Table Row Colors
 
 ---
 
-## Step 17 Added a background text container to the homepage
+## Step 17 - Added a background text container to the homepage
 
 After I changed the background color of the index.html, I needed a text container for the text to be more readable. 
 
@@ -358,7 +358,7 @@ body.home-page main {
 
 ---
 
-## Step 18 Added a navbar in the footer
+## Step 18 - Added a navbar in the footer
 
 ```<footer>
   <nav class="footer-nav">
@@ -381,7 +381,7 @@ footer .nav-links a:hover {
 
 ---
 
-## 19 Changed color of the heading in index.html
+## 19 - Changed color of the heading in index.html
  
  I added 
  
@@ -394,6 +394,19 @@ Because for now I only need to changed the header on the index.
 
 I also reorganised my CSS page. I was doubting if I needed more CSS files to keep things cleaner. But because the webpage is not that big yet, I just reorganised it by adding notes between the code. 
 
+---
+
+## Step 20 - Added Fork-Knife Icon to Footer
+
+In this step, I enhanced the footer by adding a small fork-knife SVG icon next to the copyright symbo.
+
+- The icon is placed between the copyright symbol (©) and my name to make the footer more visually appealing.
+- I updated the HTML structure so the order reads: © [Fork-Knife icon] KristyH89.
+- The icon is aligned with the text using inline-flex styling, ensuring it stays in line with the footer text.
+- This improves the design while keeping the footer clean and functional.
+
+
+---
 
 
 ------------------------------------------------------------------------------------------------------------------

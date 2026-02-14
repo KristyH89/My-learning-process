@@ -302,6 +302,7 @@ main p {
    10. FOOTER
 ===================================================== */
 
+/* Footer general */
 footer {
   position: relative;
   z-index: 1;
@@ -311,7 +312,31 @@ footer {
   padding: 15px 0;
 }
 
-/* Lighter hover effect for footer navigation only */
+/* Footer navigation hover */
 footer .nav-links a:hover {
   color: #bce2d9;
+}
+
+/* Footer copyright + fork-knife inline */
+.footer-copy {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Fork-knife button inline, small and subtle */
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px; /* beetje ruimte van de copyright tekst */
+}
+
+.footer-btn:hover {
+  color: #bce2d9; /* lichter groen bij hover */
 }
