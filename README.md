@@ -259,7 +259,7 @@ The images were resized using CSS to maintain consistency and visual balance.
 ```html
 <link rel="icon" type="image/svg+xml" href="images/fork-knife.svg"> but did didn't work, so I converted it to png and changed it to:
 <link rel="icon" type="image/png" href="images/fork-knife.png">
-
+```
 
 ---
 
