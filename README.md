@@ -134,7 +134,7 @@ To achieve this, I added a background image directly to the `<body>` element usi
 In the HTML, I added a class to the body:
 
 ```html
-<body class="contact-page">
+<body class="contact-page"> ```
 
 
   ## Debugging Lesson – Live View vs GitHub View
