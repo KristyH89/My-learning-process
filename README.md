@@ -352,8 +352,30 @@ body.home-page main {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+---
+
+## Step 18 Added a navbar in the footer
+
+  <footer>
+  <nav class="footer-nav">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <p>&copy; 2026 KristyH89</p>
+</footer>
+
+After I added the navbar on the footer, I also had to change the hover.
+
+footer .nav-links a:hover {
+  color: #bce2d9;   
+}
 
 
+---
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)

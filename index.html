@@ -89,18 +89,21 @@
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 KristyH89</p>
-  </footer>
 
-  <script>
-    // Laad herbruikbare header via fetch
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
+
+  <footer>
+  <nav class="footer-nav">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <p>&copy; 2026 KristyH89</p>
+</footer>
+
+ 
 
 </body>
 </html>

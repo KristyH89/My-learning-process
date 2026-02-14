@@ -279,3 +279,7 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+
+footer .nav-links a:hover {
+  color: #bce2d9;   
+}
