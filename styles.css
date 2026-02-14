@@ -10,8 +10,23 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
 }
-body {
-  background-color: #cacaca; 
+
+body.home-page {
+  background-image: url("images/background-index3.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.food-page {
+  background-image: url("images/background-index3.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 
 body.contact-page {
   background-image: url("images/background-contact2.jpeg");
@@ -20,6 +35,16 @@ body.contact-page {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+body.home-page main {
+  background-color: rgba(255, 255, 255, 0.9); /* licht transparant wit */
+  max-width: 900px;
+  margin: 40px auto; /* midden horizontaal */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Header */
 header {

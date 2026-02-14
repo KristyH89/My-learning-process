@@ -339,6 +339,20 @@ Table Row Colors
 
 ---
 
+## Step 17 Added a background text container to the homepage
+
+After I changed the background color of the index.html, I needed a text container for the text to be more readable. 
+
+body.home-page main {
+  background-color: rgba(255, 255, 255, 0.9); /* licht transparant wit */
+  max-width: 900px;
+  margin: 40px auto; /* midden horizontaal */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------
