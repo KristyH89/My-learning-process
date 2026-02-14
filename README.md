@@ -134,7 +134,8 @@ To achieve this, I added a background image directly to the `<body>` element usi
 In the HTML, I added a class to the body:
 
 ```html
-<body class="contact-page"> ```
+<body class="contact-page"> 
+```
 
 
   ## Debugging Lesson – Live View vs GitHub View
@@ -376,6 +377,18 @@ footer .nav-links a:hover {
 
 
 ---
+
+## 19 Changed color of the heading in index.html
+ 
+ I added body.home-page h1 {
+  color: rgb(54, 151, 111);
+}  
+
+Because for now I only need to changed the header on the index. 
+
+I also reorganised my CSS page. I was doubting if I needed more CSS files to keep things cleaner. But because the webpage is not that big yet, I just reorganised it by adding notes between the code. 
+
+
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)

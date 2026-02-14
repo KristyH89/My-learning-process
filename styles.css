@@ -1,24 +1,25 @@
-/* Reset */
+/* =====================================================
+   1. RESET & GLOBAL SETTINGS
+===================================================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
 }
 
-body.home-page {
-  background-image: url("images/background-index3.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
+/* =====================================================
+   2. PAGE BACKGROUNDS
+   Different background per page using body classes
+===================================================== */
+
+body.home-page,
 body.food-page {
   background-image: url("images/background-index3.png");
   background-size: cover;
@@ -26,7 +27,6 @@ body.food-page {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 
 body.contact-page {
   background-image: url("images/background-contact2.jpeg");
@@ -36,17 +36,29 @@ body.contact-page {
   background-attachment: fixed;
 }
 
+
+/* =====================================================
+   3. HOME PAGE SPECIAL STYLING
+===================================================== */
+
 body.home-page main {
-  background-color: rgba(255, 255, 255, 0.9); /* licht transparant wit */
+  background-color: rgba(255, 255, 255, 0.9);
   max-width: 900px;
-  margin: 40px auto; /* midden horizontaal */
+  margin: 40px auto;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+body.home-page h1 {
+  color: rgb(54, 151, 111);
+}
 
-/* Header */
+
+/* =====================================================
+   4. HEADER & NAVIGATION
+===================================================== */
+
 header {
   position: relative;
   width: 100%;
@@ -62,7 +74,6 @@ header {
   z-index: 1;
 }
 
-/* Navbar */
 nav {
   width: 100%;
   background-color: rgba(54, 151, 111, 0.6);
@@ -88,7 +99,11 @@ nav {
   color: rgb(54, 151, 111);
 }
 
-/* Main content */
+
+/* =====================================================
+   5. GENERAL CONTENT STYLING
+===================================================== */
+
 .content {
   position: relative;
   z-index: 1;
@@ -101,68 +116,80 @@ nav {
 main p {
   margin-bottom: 15px;
 }
-.intro {
-    text-align: center;
-    padding: 40px 20px;
+
+.intro,
+.goals {
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .home-image {
-    display: block;
-    margin: 20px auto;
-    width: 60%;
-    border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
 }
 
-.goals {
-    text-align: center;
-    padding: 40px 20px;
-}
+
+/* =====================================================
+   6. TABLE STYLING (HOME PAGE)
+===================================================== */
 
 .goals-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
 }
 
 .goals-table th,
 .goals-table td {
-    border: 1px solid #598f71;
-    padding: 12px;
+  border: 1px solid #598f71;
+  padding: 12px;
 }
 
 .goals-table th {
-    background-color: rgb(54, 151, 111);
-    color: white;
+  background-color: rgb(54, 151, 111);
+  color: white;
 }
 
+/* Zebra striping for table rows */
 .goals-table tbody tr:nth-child(odd) {
-    background-color: #bce2d9;
+  background-color: #bce2d9;
 }
 
-.goals-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+.goals-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
+
+
+/* =====================================================
+   7. ICE CREAM STEP SECTION
+===================================================== */
 
 .ice-cream-steps {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ice-steps {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .ice-steps img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
 }
-}
+
+
+/* =====================================================
+   8. FOOD PAGE – RECIPE CARDS
+===================================================== */
 
 #recipes {
   text-align: center;
@@ -172,8 +199,8 @@ main p {
 .recipe-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  gap: 30px; 
+  justify-content: center;
+  gap: 30px;
 }
 
 .recipe-card {
@@ -182,14 +209,15 @@ main p {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   padding: 20px;
-  width: 250px; 
+  width: 250px;
   box-shadow: 0 4px 10px rgb(54, 151, 111);
   text-align: center;
 }
-  .recipe-card h3 {
-    margin-bottom:15px ;
-    color: rgb(54, 151, 111);
-    min-height: 2.5em;
+
+.recipe-card h3 {
+  margin-bottom: 15px;
+  color: rgb(54, 151, 111);
+  min-height: 2.5em;
 }
 
 .recipe-card img.recipe-img {
@@ -199,17 +227,16 @@ main p {
   margin-bottom: 15px;
 }
 
-.recipe-card h3 {
-  margin-bottom: 10px;
-  color: rgb(54, 151, 111);
-}
-
 .recipe-card p {
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
-/* Contact form */
+
+/* =====================================================
+   9. CONTACT PAGE – FORM STYLING
+===================================================== */
+
 .contact-form {
   background-color: rgba(248, 240, 248, 0.9);
   padding: 25px;
@@ -256,7 +283,7 @@ main p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* ruimte tussen icoon en tekst */
+  gap: 8px;
   background-color: rgb(54, 151, 111);
   color: white;
   padding: 10px 15px;
@@ -267,10 +294,14 @@ main p {
 }
 
 .contact-form .submit-btn:hover {
-  background-color: rgb(51, 97, 79)
+  background-color: rgb(51, 97, 79);
 }
 
-/* Footer */
+
+/* =====================================================
+   10. FOOTER
+===================================================== */
+
 footer {
   position: relative;
   z-index: 1;
@@ -280,6 +311,7 @@ footer {
   padding: 15px 0;
 }
 
+/* Lighter hover effect for footer navigation only */
 footer .nav-links a:hover {
-  color: #bce2d9;   
+  color: #bce2d9;
 }
