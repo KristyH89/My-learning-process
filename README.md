@@ -9,16 +9,16 @@ The original workshop instructions are included below this report. I used them a
 
 ### Step 1 – Create the header
 
-I added a '<header>' to my homepage to welcome visitors and provide structure.
+I added a `<header>` to my homepage to welcome visitors and provide structure.
 
 - The header now does not contain text directly, but instead displays a background image with the bottom part visible, showing my "Coocking Adventures with Kristy" banner. I wanted to write some text there first, but it didn't look right with the background-image. 
 - I used CSS background-image to set the header image, background-size: cover to fill the header, and background-position: bottom center to ensure the important part of the image (the bottom) remains visible even on larger screens. 
-- A <nav> element is placed at the bottom of the header, styled with position: absolut; bottom: 0; left:0; widht: 100% to span the full widht. The links are centred using Flexbox. 
+- A `<nav>` element is placed at the bottom of the header, styled with position: absolut; bottom: 0; left:0; widht: 100% to span the full widht. The links are centred using Flexbox. 
 
 **Note on debugging the navbar:**
-Initially, the navbar appeared only on the righ side of the header. I tried several approaches, including adjusting widhts and flex settings, but the issue persisted. Eventually, I realized that adding left: 0; to the CSS positioning fixed it and ensured the navbar spanned the full widht as intended. This taught me a lot about absolute positioning and how it interacts with parent elements and flex layouts.  
+Initially, the navbar appeared only on the right side of the header. I tried several approaches, including adjusting widhts and flex settings, but the issue persisted. Eventually, I realized that adding left: 0; to the CSS positioning fixed it and ensured the navbar spanned the full widht as intended. This taught me a lot about absolute positioning and how it interacts with parent elements and flex layouts.  
 
-- Using CSS instead of <img> for the header background allows more flexibility for positioning and ensures the header scales well on diffrent screen sizes. 
+- Using CSS instead of `<img>` for the header background allows more flexibility for positioning and ensures the header scales well on diffrent screen sizes. 
 
 
 ---
@@ -37,7 +37,7 @@ I added a `<main>` section below the header to display the primary content of th
 
 I added a `<footer>` at the bottom of the page:
 
-- Contains a simple copyright line: "© 2026 Cooking Adventures with Kristy"
+- Contains a simple copyright line: "© 2026 KristyH89"
 - Styled with a background color and centered text. I will change this later. This is just a start. 
 
 ---
@@ -76,6 +76,7 @@ I added a **contact form** to the website on `contact.html`:
 
 ## Step 7 – Header and Navbar on All Pages  
 
+After I changed the background of the header I also changed the color of the navbar to match the backgrund. 
 I ensured that the **header and navbar are consistent across all pages** (`index.html`, `food.html`, and `contact.html`):
 
 - The `<header>` contains a background image that is always 400px high.  
@@ -347,7 +348,7 @@ Table Row Colors
 
 After I changed the background color of the index.html, I needed a text container for the text to be more readable. 
 
-body.home-page main {
+```body.home-page main {
   background-color: rgba(255, 255, 255, 0.9); /* licht transparant wit */
   max-width: 900px;
   margin: 40px auto; /* midden horizontaal */
@@ -355,6 +356,7 @@ body.home-page main {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+```
 
 ---
 
