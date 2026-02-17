@@ -243,6 +243,22 @@ main p {
   transform: scale(1.02);  /* subtle zoom effect on hover */
 }
 
+.recipe h2 {
+  margin-top: 40px;
+}
+
+.recipe h3 {
+  margin-top: 25px;
+}
+
+.recipe ul,
+.recipe ol {
+  margin-bottom: 30px;
+}
+
+.recipe p {
+  margin-bottom: 20px;
+}
 
 /* =====================================================
    9. CONTACT PAGE – FORM STYLING
