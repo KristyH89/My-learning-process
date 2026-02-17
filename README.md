@@ -428,7 +428,20 @@ I updated one recipe card on `food.html` so that one (Gevulde speculaas) card is
 
 This makes it easy for users to click anywhere on a card to view the full recipe.
 
+---
 
+### Step 23 – Restructured recipe pages into a separate folder
+
+I reorganized my project structure by creating a separate `recipe/` folder for all individual recipe pages. This keeps the project cleaner and more scalable as the number of recipes grows.
+
+- Moved individual recipe pages (`gevulde-speculaas.html`) into the `recipe/` folder.
+- Updated internal links to ensure navigation works correctly from subfolders.
+- Used absolute paths (e.g., `/My-learning-process/food.html`) in the navigation to prevent routing issues.
+- Adjusted the CSS link in recipe pages using `../style.css` to maintain consistent styling.
+
+This improved the overall structure, maintainability, and navigation stability of the website
+
+---
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
