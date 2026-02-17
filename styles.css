@@ -13,10 +13,16 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
+/* Global heading spacing */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
 
 /* =====================================================
    2. PAGE BACKGROUNDS
-   Different background per page using body classes
 ===================================================== */
 
 body.home-page,
@@ -152,7 +158,6 @@ main p {
   color: white;
 }
 
-/* Zebra striping for table rows */
 .goals-table tbody tr:nth-child(odd) {
   background-color: #bce2d9;
 }
@@ -233,22 +238,25 @@ main p {
 }
 
 .recipe-link {
-  display: block;           /* make the whole card clickable */
-  text-decoration: none;    /* remove underline */
-  color: inherit;           /* keep the original text color */
+  display: block;
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.2s ease;
 }
 
 .recipe-link:hover {
-  transform: scale(1.02);  /* subtle zoom effect on hover */
+  transform: scale(1.02);
 }
 
+/* Corrected recipe page headings */
 .recipe h2 {
   margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .recipe h3 {
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .recipe ul,
@@ -259,6 +267,7 @@ main p {
 .recipe p {
   margin-bottom: 20px;
 }
+
 
 /* =====================================================
    9. CONTACT PAGE – FORM STYLING
@@ -329,7 +338,6 @@ main p {
    10. FOOTER
 ===================================================== */
 
-/* Footer general */
 footer {
   position: relative;
   z-index: 1;
@@ -339,18 +347,15 @@ footer {
   padding: 15px 0;
 }
 
-/* Footer navigation hover */
 footer .nav-links a:hover {
   color: #bce2d9;
 }
 
-/* Footer copyright + fork-knife inline */
 .footer-copy {
   margin-top: 10px;
   font-size: 0.95rem;
 }
 
-/* Fork-knife button inline, small and subtle */
 .footer-btn {
   display: inline-flex;
   align-items: center;
@@ -361,12 +366,13 @@ footer .nav-links a:hover {
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-left: 5px; /* beetje ruimte van de copyright tekst */
+  margin-left: 5px;
 }
 
 .footer-btn:hover {
-  color: #bce2d9; /* lichter groen bij hover */
+  color: #bce2d9;
 }
+
 
 /* =====================================================
    11. RESPONSIVE DESIGN (MOBILE)
