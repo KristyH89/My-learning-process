@@ -418,6 +418,17 @@ Additionally, I added some CSS settings to make the website more mobile-friendly
 
 ---
 
+### Step 22 – Make one recipe card clickable
+
+I updated one recipe card on `food.html` so that one (Gevulde speculaas) card is now fully clickable.
+
+- Wrapped the `.recipe-card` content in an `<a>` tag linking to the corresponding recipe page (`gevulde-speculaas.html`).
+- Added CSS to make the link block-level, remove underlines, and keep the text color.
+- Added a subtle hover zoom effect for better user interaction.
+
+This makes it easy for users to click anywhere on a card to view the full recipe.
+
+
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)

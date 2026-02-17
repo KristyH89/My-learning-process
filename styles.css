@@ -232,6 +232,17 @@ main p {
   line-height: 1.5;
 }
 
+.recipe-link {
+  display: block;           /* make the whole card clickable */
+  text-decoration: none;    /* remove underline */
+  color: inherit;           /* keep the original text color */
+  transition: transform 0.2s ease;
+}
+
+.recipe-link:hover {
+  transform: scale(1.02);  /* subtle zoom effect on hover */
+}
+
 
 /* =====================================================
    9. CONTACT PAGE – FORM STYLING
