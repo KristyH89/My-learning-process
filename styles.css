@@ -340,3 +340,27 @@ footer .nav-links a:hover {
 .footer-btn:hover {
   color: #bce2d9; /* lichter groen bij hover */
 }
+
+/* =====================================================
+   11. RESPONSIVE DESIGN (MOBILE)
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .ice-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ice-steps img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  body.home-page,
+  body.food-page,
+  body.contact-page {
+    background-attachment: scroll;
+  }
+
+}

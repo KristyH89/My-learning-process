@@ -410,6 +410,14 @@ In this step, I enhanced the footer by adding a small fork-knife SVG icon next t
 
 ---
 
+## Step 21 - Added an extra page (not visable yet) and fixed the mobile view.
+
+I added an extra page that is not yet visible, because I eventually want to display several recipes online in an algorithmic style. This will also give me the opportunity to practice some algorithm exercises.
+
+Additionally, I added some CSS settings to make the website more mobile-friendly. I achieved this by using a `@media` query to adjust layouts and image sizes for smaller screens.
+
+---
+
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
