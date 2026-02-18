@@ -478,6 +478,21 @@ I shall add more recipes to the site. Only when I make real changes to lay-out/s
 
 ---
 
+### Step 25 – Make recipe pages responsive on mobile
+
+I updated the recipe pages so that the content box fits properly on mobile screens.
+
+- Wrapped the entire recipe content in a `.recipe` container with a max-width, padding, background color, and border-radius for a neat card-like look.
+- Made images inside recipes responsive by setting `width: 100%` and `height: auto`.
+- Adjusted `<pre>` and `<code>` blocks so that long lines wrap on smaller screens and horizontal scrolling is avoided.
+- Added a mobile media query (`max-width: 768px`) to reduce padding and ensure the box and images scale nicely.
+
+This ensures that both the text and images of the recipes are fully visible and well-contained on phones and tablets.
+
+
+---
+
+
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
 

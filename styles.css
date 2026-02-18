@@ -337,6 +337,26 @@ main p {
    10. Recipe page
 =====================================================*/
 
+.recipe {
+  max-width: 800px;       /* max breedte op desktop */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* licht wit vakje */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.recipe pre,
+.recipe code {
+  display: block;
+  white-space: pre-wrap;  /* wrap lange regels op mobiel */
+  word-break: break-word;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
 .recipe-end-image {
   max-width: 700px;        /* maximale breedte */
   margin: 40px auto;       /* ruimte boven/onder + centreren */
@@ -350,6 +370,7 @@ main p {
   height: 400px;
   object-fit: contain;
 }
+
 
 /* =====================================================
    11. FOOTER
@@ -413,4 +434,15 @@ footer .nav-links a:hover {
     background-attachment: scroll;
   }
 
+}
+
+@media (max-width: 768px) {
+  .recipe {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .recipe img {
+    max-width: 100%;
+  }
 }
