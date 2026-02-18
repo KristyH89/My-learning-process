@@ -338,7 +338,7 @@ main p {
 =====================================================*/
 
 .recipe {
-  max-width: 800px;       /* max breedte op desktop */
+  max-width: 900px;       /* max breedte op desktop */
   margin: 0 auto;
   padding: 20px;
   background-color: rgba(54, 151, 111, 0.274); 
