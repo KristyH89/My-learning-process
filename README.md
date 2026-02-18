@@ -492,6 +492,42 @@ This ensures that both the text and images of the recipes are fully visible and 
 
 ---
 
+### Step 26 – Make recipe content responsive with styled box
+
+I updated the recipe pages to ensure that the text and images fit nicely inside a box on both desktop and mobile.
+
+- Wrapped the recipe content in a `<div class="recipe">` container so that CSS styling can be applied consistently.
+- Added a subtle green background with some transparency to make the recipe box stand out:
+
+```css
+.recipe {
+  max-width: 800px;       /* maximum width on desktop */
+  margin: 0 auto;         /* center the box */
+  padding: 20px;
+  background-color: rgba(54, 151, 111, 0.274); /* greenish transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow-wrap: break-word; /* prevents text from overflowing */
+  box-sizing: border-box;
+}
+
+.recipe img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+pre, code {
+  overflow-x: auto;       /* horizontal scroll for long lines */
+  white-space: pre-wrap;  /* wrap text */
+  word-wrap: break-word;
+}
+```
+
+- This ensures that all recipe text and images are readable, properly contained in the box, and responsive on mobile devices.
+
+
+---
 
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)

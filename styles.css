@@ -341,9 +341,12 @@ main p {
   max-width: 800px;       /* max breedte op desktop */
   margin: 0 auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.95); /* licht wit vakje */
+  background-color: rgba(54, 151, 111, 0.274); 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow-wrap: break-word;  /* voorkomt dat tekst buiten gaat */
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
 
 .recipe pre,
