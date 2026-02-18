@@ -443,6 +443,41 @@ This improved the overall structure, maintainability, and navigation stability o
 
 ---
 
+### Step 24 – Updating Recipe Styling & Adding Images
+
+In this step, I improved the layout and styling of my recipe pages.
+
+First, I updated the recipe content structure by wrapping the ingredients and instructions inside `<pre><code>` tags. This ensures better formatting and preserves spacing, making the recipes easier to read and more structured.
+
+Example:
+
+```html
+<pre><code>
+Ingredients:
+- 200g biscuits
+- 100g butter
+- 300ml cream
+</code></pre>
+```
+
+This gives the recipes a cleaner and more organized appearance.
+
+Additionally, I added an image at the bottom of each recipe page.
+To prevent the image from becoming too large, I placed it inside a styled container (a fixed image box) using CSS:
+
+`object-fit: contain;`
+
+This ensures:
+
+- The full image remains visible
+- The image scales proportionally
+- No parts of the image are cropped
+- This update improves the visual presentation of the recipes and creates a more professional and consistent design across the website.
+
+I shall add more recipes to the site. Only when I make real changes to lay-out/style, I will write this to the README. 
+
+---
+
 ------------------------------------------------------------------------------------------------------------------
 ![Lexicon Logo](https://lexicongruppen.se/media/wi5hphtd/lexicon-logo.svg)
 
